@@ -1,0 +1,14 @@
+Package: shinytestPackageExample
+Version: 1.0
+Title: Example package that uses shinytest
+Description: Example package that uses shinytest.
+Authors@R: person("Chang", "Winston", , "winston@rstudio.com", c("aut", "cre"))
+License: Unlimited
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+RoxygenNote: 6.0.1.9000
+Suggests: 
+    testthat
+Imports: 
+    shiny
