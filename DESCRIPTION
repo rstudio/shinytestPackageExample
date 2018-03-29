@@ -10,10 +10,8 @@ ByteCompile: true
 RoxygenNote: 6.0.1.9000
 Suggests: 
     testthat,
-    shinytest,
-    callr (>= 2.0.2.9002)
+    shinytest
 Imports: 
     shiny
 Remotes:
-    rstudio/shinytest,
-    r-lib/callr
+    rstudio/shinytest
