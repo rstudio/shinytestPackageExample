@@ -19,4 +19,6 @@ helloWorldApp <- function() {
   )
 }
 
-cars <- NULL
+
+# This is needed to make R CMD check happy
+globalVariables("cars")
