@@ -13,3 +13,5 @@ Suggests:
     shinytest
 Imports: 
     shiny
+Remotes:
+    rstudio/shinytest
