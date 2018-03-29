@@ -9,6 +9,7 @@ LazyData: true
 ByteCompile: true
 RoxygenNote: 6.0.1.9000
 Suggests: 
-    testthat
+    testthat,
+    shinytest
 Imports: 
     shiny
