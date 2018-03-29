@@ -12,10 +12,10 @@ To use shinytest to test the application, the key is to add an app.R file that s
 The other steps you need to do are:
 
 * Add a test script which runs `testApp()` on the application. This package has [tests/testthat/test-apps.R](https://github.com/rstudio/shinytestPackageExample/blob/master/tests/testthat/test-apps.R) to run the tests.
-* In the `DESCRIPTION` file, add `shinytest` to the `Suggests:` field.
+* In the DESCRIPTION file, add `shinytest` to the `Suggests:` field.
 
 We also suggest that you do the following:
 
 * If you will submit the package to CRAN, configure the application tests to **not** run on the CRAN build servers. If you are using testthat, use `skip_on_cran()` in the test block, as in the example.
-* You can also use Travis for continuous integration.
+* You can also use Travis for continuous integration. Note that until shinytest is available on CRAN, you will also need to edit the DESCRIPTION file and add a `Remotes` field with a `rstudio/shinytest` entry.
 * If you will be testing the package on multiple different platforms, then when calling `testApp()`, use `compareImages = FALSE`. This is because the the screenshots on will likely have small differences across different platforms, and result in spurious test failures.
